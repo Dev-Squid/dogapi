@@ -1,0 +1,6 @@
+### POST REQUEST
+
+POST {{BASE_URL}}/login
+Content-Type: application/x-www-form-urlencoded
+
+username=astrid@outlook.com&password=password

@@ -1,0 +1,9 @@
+### POST REQUEST
+
+POST {{BASE_URL}}/dogs
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+    "name": "Placeholder"
+}

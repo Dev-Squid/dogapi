@@ -1,0 +1,10 @@
+### POST REQUEST
+
+POST {{BASE_URL}}/comments
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+    "dog_id": "1",
+    "content": "This is a comment"
+}

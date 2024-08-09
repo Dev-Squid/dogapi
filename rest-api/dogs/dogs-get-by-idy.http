@@ -1,0 +1,5 @@
+### GET REQUEST
+
+GET {{BASE_URL}}/dogs/2
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
