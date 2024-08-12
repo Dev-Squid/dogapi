@@ -5,5 +5,5 @@ Content-Type: application/json
 Authorization: Bearer {{TOKEN}}
 
 {
-    "name": "Placeholder"
+    "name": "Lulo"
 }

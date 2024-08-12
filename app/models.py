@@ -48,28 +48,3 @@ class Vote(Base):
     created_at = Column(DateTime, server_default=func.now(), default=func.now())
     updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now(), default=func.now())
 
-# Define the trigger function
-trigger_function = DDL("""
-CREATE OR REPLACE FUNCTION increment_vote_count()
-RETURNS TRIGGER AS $$
-BEGIN
-    UPDATE comments
-    SET vote_count = vote_count + 1
-    WHERE comment_id = NEW.comment_id;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-""")
-
-# Define the trigger
-trigger = DDL("""
-CREATE TRIGGER increment_vote_count_trigger
-AFTER INSERT ON votes
-FOR EACH ROW
-EXECUTE FUNCTION increment_vote_count();
-""")
-
-# Attach the DDL to the Comment model
-event.listen(Vote.__table__, 'after_create', trigger_function)
-event.listen(Vote.__table__, 'after_create', trigger)
-

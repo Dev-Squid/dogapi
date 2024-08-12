@@ -4,11 +4,18 @@
 
 DogAPI is a web service that allows users to manage and interact with dog-related data. This includes functionalities such as adding new dogs, voting on comments, and more.
 
+The intent of this API is for learning purposes and fun.
+
+The end goal is to hook up this API with a UX which show the created dogs in a kind of a big place so you can watch them. Also everytime you interact with those dogs they will change the behavior in real time in the UI.
+
+The UI piece is not intended to be develop soon and only the API's are integrated now.
+
 ## Features
 - Comments: Users can add comments to dogs.
 - Votes: Users can vote on comments.
 - CRUD Users: Manage user data with Create, Read, Update, and Delete operations.
 - Auth via OAuth2 with JWT Token: Secure authentication using OAuth2 and JWT tokens.
+- OpenAI: I use OpenAI to generate Json object representing dynamic data for the dogs, like traits and activity levels. 
 
 ## Technologies Used
 
@@ -20,12 +27,13 @@ DogAPI is a web service that allows users to manage and interact with dog-relate
 
 ## Requirements
 
-- Python 3.x
-- Uvicorn
-- SQLAlchemy
-- PostgreSQL
-- Pydantic
-- Jose
+- Python 3.x (Programming languaje)
+- Uvicorn (Server)
+- SQLAlchemy (ORM)
+- PostgreSQL (Relational DB)
+- Pydantic (Schema validation)
+- Jose (JWT)
+- Alembic (SQL Migrations)
 
 ## Instalation
 

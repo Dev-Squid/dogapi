@@ -6,5 +6,5 @@ Authorization: Bearer {{TOKEN}}
 
 {
     "dog_id": "1",
-    "content": "This is a comment"
+    "content": "I love Lulo so much!"
 }

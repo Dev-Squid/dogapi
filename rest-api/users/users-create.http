@@ -3,6 +3,6 @@
 POST http://127.0.0.1:8000/users
 
 {
-    "email": "astrid@outlook.com",
+    "email": "rorodr@outlook.com",
     "password": "password"
 }
