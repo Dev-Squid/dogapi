@@ -10,6 +10,8 @@ The end goal is to hook up this API with a UX which show the created dogs in a k
 
 The UI piece is not intended to be develop soon and only the API's are integrated now.
 
+You can visit a live demo of this at (https://ingroca.dev/projects/dogapi/docs)
+
 ## Features
 - Comments: Users can add comments to dogs.
 - Votes: Users can vote on comments.
@@ -24,6 +26,7 @@ The UI piece is not intended to be develop soon and only the API's are integrate
 - Jose: A JavaScript Object Signing and Encryption (JOSE) library for JWT tokens. [Learn more](https://python-jose.readthedocs.io/en/latest/)
 - SQLAlchemy: The Python SQL toolkit and Object-Relational Mapping (ORM) library. [Learn more](https://www.sqlalchemy.org/)
 - FastAPI: A modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. [Learn more](https://fastapi.tiangolo.com/)
+- NGINX: Is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server. [Learn more] (https://nginx.org/en/)
 
 ## Requirements
 
@@ -35,7 +38,7 @@ The UI piece is not intended to be develop soon and only the API's are integrate
 - Jose (JWT)
 - Alembic (SQL Migrations)
 
-## Instalation
+## Installation
 
 1. **Clone the repo:**
 
